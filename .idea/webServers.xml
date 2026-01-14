@@ -3,7 +3,7 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="a5e9885b-e35c-4fd0-acef-8081f139c63f" name="M3">
-        <fileTransfer accessType="SFTP" host="m3.massive.org.au" port="22" sshConfigId="5efb7c86-6273-4c06-9612-e00b304cbd61" sshConfig="mtra0069@m3.massive.org.au:22 password">
+        <fileTransfer accessType="SFTP" host="192.168.1.107" port="22" sshConfigId="5efb7c86-6273-4c06-9612-e00b304cbd61" sshConfig="ubuntu@192.168.1.107:22 password">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>

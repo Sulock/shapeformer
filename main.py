@@ -52,7 +52,7 @@ parser.add_argument("--sge", default=0, type=int, help="stop-gradient epochs")
 parser.add_argument("--shape_embed_dim", default=128, type=int, help="embedding dimension of shape")
 parser.add_argument("--pos_embed_dim", default=128, type=int, help="embedding dimension of pos")
 parser.add_argument("--processes", default=64, type=int, help="number of processes for extracting shapelets")
-parser.add_argument("--pre_shapelet_discovery", default=1, type=int, help="number of processes for extracting shapelets")
+parser.add_argument("--pre_shapelet_discovery", default=0, type=int, help="number of processes for extracting shapelets")
 
 # Transformers Parameters ------------------------------
 parser.add_argument('--emb_size', type=int, default=64, help='Internal dimension of transformer embeddings')
@@ -67,8 +67,8 @@ parser.add_argument('--dropout', type=float, default=0.4, help='Droupout regular
 
 # Training Parameters/ Hyper-Parameters ----------------
 parser.add_argument('--epochs', type=int, default=200, help='Number of training epochs')
-parser.add_argument('--batch_size', type=int, default=8, help='Training batch size')
-parser.add_argument('--lr', type=float, default=5e-2, help='learning rate')
+parser.add_argument('--batch_size', type=int, default=16, help='Training batch size')
+parser.add_argument('--lr', type=float, default=1e-2, help='learning rate')
 parser.add_argument('--weight_decay', type=float, default=5e-4, help='learning rate')
 parser.add_argument('--val_interval', type=int, default=1, help='Evaluate on validation every XX epochs. Must be >= 1')
 parser.add_argument('--key_metric', choices={'loss', 'accuracy', 'precision'}, default='accuracy',
